@@ -17,6 +17,7 @@
             </a>
             <ul class="menu">
                 {% if request.user.is_authenticated %}
+                    {{ request.user.username }}
                     <li>
                         <a href="{% url "logout" %}">Sign out</a>
                     </li>
